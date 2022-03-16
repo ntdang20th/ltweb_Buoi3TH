@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Bài 4</title>
+		<meta charset="utf-8" />
+	</head>
+	<body>
+
+		<script>
+			function Login() {
+
+				var user = f.txtTenDangNhap.value;
+				var pass = f.txtTenDangNhap.value;
+				var repass = f.txtTenDangNhap.value;
+
+				if(user == "" || pass == "" || repass == "") {
+					alert("Vui long nhap day du");
+					return false;
+				}
+				else {
+					if(user == "123" && pass == "123" && repass == "123"){
+						alert("Dang ky thanh cong");
+					}
+				}
+			}
+		</script>
+
+		<form name="f">
+			<table>
+				<tr>
+					<td>
+						Tên đăng nhập:
+					</td>
+					<td>
+						<input type="text" name="txtTenDangNhap">
+					</td>
+					<td>
+						(Tối thiểu 6 ký tự)
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						Mật khẩu:
+					</td>
+
+					<td>
+						<input type="password" name="txtPass">
+					</td>
+				</tr>
+
+
+				<tr>
+					<td>
+						Nhập lại mật khẩu:
+					</td>
+					<td>
+						<input type="password" name="txtNhapLaiPass">
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						<input type = "button" onclick = "Login()" value = "Dang nhap"> 
+					</td>
+					
+				</tr>
+
+			</table>
+		</form>
+	</body>
+</html>

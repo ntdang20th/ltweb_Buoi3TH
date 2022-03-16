@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Bài 2</title>
+		<meta charset="utf-8" />
+	</head>
+	<body>
+		<form action="gì dị">
+			<table>
+				<tr>
+					<td>
+						Họ tên:
+					</td>
+					<td>
+						<input type="text" name="txtHoten">
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						Năm sinh:
+					</td>
+					<td>
+						<select name="cbbNamSinh" id="">
+							<script>
+								var date = new Date();
+								var Now = date.getFullYear();
+								for (var i = 1950; i <= Now; i++) {
+									document.write('<option>'+i+'</option>')
+								}
+							</script>
+						</select>
+					</td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>
